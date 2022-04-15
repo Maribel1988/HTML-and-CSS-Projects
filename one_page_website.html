@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Maribella - Shopping Cart</title>
+   
+    
+    <link rel="stylesheet" type="text/css" href="C:\Users\44798\Desktop\One-Page Website\stylesheet.css" />
+<style>
+ .footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%; 
+            height: 40px;
+            background-color: red;
+            color: white;
+            text-align: center;
+}
+ 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 30.33%;
+  padding: 0px;
+}
+  </style>
+
+</head>
+<body>
+<div class="navbar">
+<nav><p><a href="index.html">Home</a> | <a href="products.htm">Order Status</a> | <a href="C:\Users\44798\Desktop\One-Page Website\About.html">About</a> | <a href="C:\Users\44798\Desktop\One-Page Website\ContactUs.html">Contact Us</a></p></nav></div>
+   <section id="main">
+	   	<section id="main_content">
+  			<header>
+  				<div id="sitelogo">
+					<a href="index.html"><center><img src="C:\Users\44798\Desktop\One-Page Website\images\MARIBELLA_LOGO.PNG" alt="Maribella logo"></center></a>
+				</div>
+   
+    			<div id="headerinfo">
+					<p>&nbsp;</p>
+					<p>Call now: <span style="font-size: 1.5em;">753.571.9417</span></p>
+ 				</div>
+	    	</header>
+
+
+
+
+	        <h1>Shopping Cart</h1>
+	        
+            <section id="cart_items">
+                <article class="item">
+                    
+					<a href="#CheckOut" style="text-align: right;">Go to Checkout</a>
+
+                    <div class="itemquantity">
+                        <h2>Quantity:</h2>
+                    </div>
+
+                    <div class="itemprice">
+                        <h2>Price:</h2>
+                    </div>
+                    <div class="itemtotal">
+                        <h2>Total:</h2>
+                    </div>
+                </article>
+
+                <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                <article class="item">
+				<div class="row">
+				    <div class="column">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_1.jpg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+					</div>					    
+					<div class="column">						
+					<p><iframe width="300" height="320" src="https://www.youtube.com/embed/OyQfN2FNTb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    </div>
+					</div>
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">11.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+                </article>
+				  <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\Website2\Images\Thumb\thumbnail_2.jpg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">11.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+                </article>
+				
+				  <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_3.jpg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">11.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+                </article>
+				  <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_4.jpg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">9.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+                </article>
+				  <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_5.png" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">9.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+                </article>
+				  <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_6.jpg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">12.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+                </article>
+				  <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_7.jpg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">12.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+                </article>
+				
+
+
+                <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                 <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_8.jpeg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">8.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+
+                <div class="clear"></div>
+                <hr />
+				<div class="itemdesc" style="text-align: center;">
+                        <h2>Description:</h2>
+                    </div>
+                 <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="C:\Users\44798\Desktop\One-Page Website\images\Thumb\thumbnail_9.jpg" width= 300 height= 350  alt="London Bus" /></a>
+                        </div>
+                        <p>London Bus</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive(manqty);">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">9.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal"></p>
+                    </div>
+
+            </section>
+
+            <div class="clear"></div>
+            <hr />
+			
+
+            <section>
+                <article class="item">
+                    <div class="itemdesc">
+                        <p>&nbsp;</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="itemprice" style="text-align: right;">
+                        <p>Subtotal:</p>
+                        <p>Sales Tax:</p>
+                        <p>&nbsp;</p>
+                        <h2 style="margin-top: 0;">Total:</h2>
+                    </div>
+
+                    <div class="itemtotal">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>________</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </article>
+                <div class="clear"></div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <p>&nbsp;</p>
+                    </div>
+
+                    <div class="order_buttons">
+                        <p><input type="button" class="buttons" value="Update Cart"></p>
+                        <p id="CheckOut"><input type="button" class="buttons" value="Checkout"></p>
+                    </div>
+
+                </article>
+
+            </section>
+	
+ 
+     
+
+
+
+	   </section>
+   </section>
+
+
+
+	   <footer>
+	         
+			<p>CUSTOMER SERVICES</p>
+			<p>Refund Policy</p>
+			<p>Track My Order</p>
+			
+        <div class="footer"> 
+	        <p>Copyright &copy; 2022 MARIBELLA, 21 Whittlesey, Peterborough, UK PE71GS</p>
+        </div>
+       		<p class="social"><img src="images/icon_facebook.png" alt="Facebook"/><img src="images/icon_googleplus.png" alt="Google+"/><img src="images/icon_linkedin.png" alt="LinkedIn"/><img src="images/icon_twitter.png" alt="Twitter"/><img src="images/icon_youtube.png" alt="YouTube"/><img src="images/icon_rss.png" alt="RSS"/></p>
+	   </footer>
+	  
+
+    <script>
+        function addFive(qty) {
+            var newQty = parseInt(document.getElementById(qty).value);
+            newQty += 5;
+            document.getElementById(qty).value = newQty;
+        }
+        
+    </script>
+
+</body>
+<!-- InstanceEnd --></html>

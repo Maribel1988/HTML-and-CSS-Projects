@@ -1,0 +1,48 @@
+body {
+	background-color: pink;
+}
+
+article {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 20px 0 20px 0;
+	color: firebrick;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 10px 0 10px 0;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin: 5px 0 5px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+	color: firebrick;
+}
+
+a:visited {
+	color: blue;
+}
+footer {
+	font-weight: bold;
+	color: White;
+	background-color: #FF00FF;
+	font-size: large
+}
+.navbar {
+  width: 100%;
+  background-color: pink;
+  overflow: auto;
+}
+	
